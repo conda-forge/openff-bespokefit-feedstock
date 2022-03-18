@@ -25,7 +25,7 @@ requirements:
     - pyyaml
     - tqdm
     - rich
-    - click
+    - click >=8.0.0
     - click-option-group
     - rdkit
     - openff-utilities
@@ -43,7 +43,7 @@ requirements:
     - torsiondrive
     - uvicorn
     - fastapi
-    - celery
+    - celery >=5.0.0
     - httpx
     - redis-server
     - redis-py
@@ -65,3 +65,4 @@ extra:
     - j-wags
     - mattwthompson
     - jthorton
+    - SimonBoothroyd
