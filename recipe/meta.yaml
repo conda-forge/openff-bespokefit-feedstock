@@ -1,5 +1,5 @@
 {% set name = "openff-bespokefit" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-bespokefit/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 7791b70917eb5e75875d1647b843e651d250a05e7de46e942d333bfe7b698c5e
+  sha256: 8b8b2d5564a12cf4a7c3f14ba3fbd2634b8ae4834e345dd0fa5153d5bfa20a2d
 
 build:
   noarch: python
@@ -25,7 +25,7 @@ requirements:
     - pyyaml
     - tqdm
     - rich
-    - click
+    - click >=8.0.0
     - click-option-group
     - rdkit
     - openff-utilities
@@ -36,14 +36,14 @@ requirements:
     - openff-fragmenter-base >=0.1.2
     - openmm >=7.6.0
     - qcportal >=0.15.6
-    - qcengine >=0.21.0
+    - qcengine >=0.23.0
     - qcelemental >=0.24.0
     - chemper
     - geometric
     - torsiondrive
     - uvicorn
     - fastapi
-    - celery
+    - celery >=5.0.0
     - httpx
     - redis-server
     - redis-py
@@ -65,3 +65,4 @@ extra:
     - j-wags
     - mattwthompson
     - jthorton
+    - SimonBoothroyd

@@ -5,7 +5,7 @@ Home: https://openforcefield.org/
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openff-bespokefit-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openff-bespokefit-feedstock/blob/main/LICENSE.txt)
 
 Summary: Automated tools for the generation of bespoke SMIRNOFF format parameters for individual molecules.
 
@@ -17,8 +17,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15538&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openff-bespokefit-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15538&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openff-bespokefit-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -118,6 +118,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@SimonBoothroyd](https://github.com/SimonBoothroyd/)
 * [@j-wags](https://github.com/j-wags/)
 * [@jthorton](https://github.com/jthorton/)
 * [@mattwthompson](https://github.com/mattwthompson/)
