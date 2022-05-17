@@ -47,6 +47,8 @@ requirements:
     - httpx
     - redis-server
     - redis-py
+    # https://github.com/openforcefield/openff-bespokefit/issues/162#issuecomment-1108840723
+    - h5py <3.2
 
 test:
   imports:
