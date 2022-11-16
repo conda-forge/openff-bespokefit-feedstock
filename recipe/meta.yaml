@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -49,6 +49,8 @@ requirements:
     - redis-py
     # https://github.com/openforcefield/openff-bespokefit/issues/162#issuecomment-1108840723
     - h5py <3.2
+run_constrained:
+    - starlette =0.20
 
 test:
   imports:
