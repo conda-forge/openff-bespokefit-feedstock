@@ -51,6 +51,8 @@ requirements:
     - h5py <3.2
   run_constrained:
     - starlette =0.20
+    - importlib_metadata >=4
+    - importlib-metadata >=4
 
 test:
   imports:
