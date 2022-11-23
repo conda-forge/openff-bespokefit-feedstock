@@ -1,5 +1,5 @@
 {% set name = "openff-bespokefit" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-bespokefit/archive/refs/tags/{{ version }}.tar.gz
-  sha256: f8e99b4028bc3615ce543bea5eceabb884f5972b546aa1185e1f21419f6b6fef
+  sha256: 29275bd86dfe553fa3e4566be93c775ab7752a32f1643f596863a0698a93921e
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
