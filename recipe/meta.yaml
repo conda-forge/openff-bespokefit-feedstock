@@ -53,7 +53,7 @@ requirements:
     - starlette =0.20
     - importlib_metadata >=4
     - importlib-metadata >=4
-    - forcebalance < 1.9.4
+    - forcebalance !=1.9.4
 
 test:
   imports:
