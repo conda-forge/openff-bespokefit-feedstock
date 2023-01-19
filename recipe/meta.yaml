@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-bespokefit/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 041fad2d433841faf531a9e8cb82a40bc5a197ab416195a7c8e5ac5b3a06a970
+  sha256: 8b9ac214a056611c126557bb37290019d7775a856d916ab039239e2a2bc4ebf2
 
 build:
   noarch: python
