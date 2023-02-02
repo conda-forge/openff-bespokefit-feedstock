@@ -51,6 +51,7 @@ requirements:
     - starlette =0.20
     - importlib_metadata >=4
     - importlib-metadata >=4
+    - h5py >=3.6
 
 test:
   imports:
