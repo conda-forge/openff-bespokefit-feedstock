@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-bespokefit/archive/refs/tags/{{ version }}.tar.gz
-  sha256: bfaf4cb725e758f3aa4cc71eae50c951d7056e2c0af736d1f98eb4237e649ef6
+  sha256: f86e432040ab49d49f7b7736aea213f07b5b96f374bc8884d6ca52699ec367c8
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -29,12 +29,12 @@ requirements:
     - click-option-group
     - rdkit
     - openff-utilities
-    - openff-toolkit-base >=0.11
+    - openff-toolkit-base >=0.11,<0.14
     - openff-interchange
     - openff-units
     - openff-forcefields
     - openff-qcsubmit
-    - forcebalance >=1.9.5
+    - forcebalance =1.9.5
     - openff-fragmenter-base >=0.1.2
     - openmm >=7.6.0
     - qcportal >=0.15.6
