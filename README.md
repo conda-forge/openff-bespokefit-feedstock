@@ -1,11 +1,11 @@
-About openff-bespokefit
-=======================
+About openff-bespokefit-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openff-bespokefit-feedstock/blob/main/LICENSE.txt)
 
 Home: https://openforcefield.org/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openff-bespokefit-feedstock/blob/main/LICENSE.txt)
 
 Summary: Automated tools for the generation of bespoke SMIRNOFF format parameters for individual molecules.
 
