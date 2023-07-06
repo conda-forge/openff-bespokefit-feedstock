@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.8
     - numpy
-    - pydantic <2.0.0a0
+    - pydantic =1
     - pyyaml
     - tqdm
     - rich
@@ -51,8 +51,6 @@ requirements:
     - redis-py
   run_constrained:
     - starlette =0.20
-    - importlib_metadata >=4
-    - importlib-metadata >=4
     - h5py >=3.6
 
 test:
