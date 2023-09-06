@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 5
+  number: 6
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -51,6 +51,7 @@ requirements:
     - redis-py
   run_constrained:
     - starlette =0.20
+    - anyio <4
     - h5py >=3.6
 
 test:
