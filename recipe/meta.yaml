@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 5
+  number: 6
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -49,6 +49,7 @@ requirements:
     - httpx
     - redis-server
     - redis-py
+    - mamba
   run_constrained:
     - starlette =0.20
     - h5py >=3.6
