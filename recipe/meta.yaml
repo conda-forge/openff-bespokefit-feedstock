@@ -34,7 +34,7 @@ requirements:
     - openff-units =0.2
     - openff-forcefields
     - openff-qcsubmit <0.50
-    - forcebalance =1.9.5
+    - forcebalance =1.9.6
     - openff-fragmenter-base >=0.1.2
     - openmm >=7.6.0
     - qcportal =0.15
