@@ -1,5 +1,5 @@
 {% set name = "openff-bespokefit" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,19 +7,19 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-bespokefit/archive/refs/tags/{{ version }}.tar.gz
-  sha256: f86e432040ab49d49f7b7736aea213f07b5b96f374bc8884d6ca52699ec367c8
+  sha256: edd5a707c22ccfe9b3a238282e501ae169f052a067a33fa2b0cc0f2f6129e5a7
 
 build:
   noarch: python
-  number: 5
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
     - numpy
     - pydantic =1
     - pyyaml
@@ -31,13 +31,13 @@ requirements:
     - openff-utilities
     - openff-toolkit-base >=0.11,<0.14
     - openff-interchange
-    - openff-units
+    - openff-units =0.2
     - openff-forcefields
-    - openff-qcsubmit
-    - forcebalance =1.9.5
+    - openff-qcsubmit <0.50
+    - forcebalance =1.9.6
     - openff-fragmenter-base >=0.1.2
     - openmm >=7.6.0
-    - qcportal >=0.15.6
+    - qcportal =0.15
     - qcengine >=0.25.0
     - qcelemental >=0.25.1
     - chemper
@@ -56,6 +56,8 @@ requirements:
 test:
   imports:
     - openff.bespokefit
+  commands:
+    - openff-bespoke --help
 
 about:
   home: https://openforcefield.org/
