@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-bespokefit/archive/refs/tags/{{ version }}.tar.gz
-  sha256: faf8e4444353a56c063c1efac220aad6ee83450b100c75d15a5b178adae8b0f1
+  sha256: cbb4d6878557b0fca3aa1b307277b2215b954b90de1bb7995ad6064e6f55a623
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.9
     - numpy
-    - pydantic =1
+    - pydantic 
     - pyyaml
     - tqdm
     - rich
