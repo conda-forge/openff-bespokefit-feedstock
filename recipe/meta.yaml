@@ -30,7 +30,7 @@ requirements:
     - click-option-group
     - rdkit
     - openff-utilities
-    - openff-toolkit-base >=0.15
+    - openff-toolkit >=0.15
     - openff-interchange
     - openff-units =0.2
     - openff-forcefields
