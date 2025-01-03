@@ -11,16 +11,16 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy
     - pydantic =1
     - pyyaml
@@ -55,6 +55,8 @@ requirements:
     - h5py >=3.6
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - openff.bespokefit
   commands:
