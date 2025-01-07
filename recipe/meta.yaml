@@ -7,20 +7,20 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-bespokefit/archive/refs/tags/{{ version }}.tar.gz
-  sha256: b75116022cb90fcf28dd87b83d7e79ace74648a0ddbd428bd1b22a82758adf26
+  sha256: cb3029638f00490d5f7b309b3358727164e8336127613adf03edc44a83639eaf
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy
     - pydantic =1
     - pyyaml
@@ -55,6 +55,8 @@ requirements:
     - h5py >=3.6
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - openff.bespokefit
   commands:
