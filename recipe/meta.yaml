@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -35,7 +35,7 @@ requirements:
     - openff-interchange
     - openff-units =0.2
     - openff-forcefields
-    - openff-qcsubmit >=0.50
+    - openff-qcsubmit >=0.50.1
     - forcebalance =1.9.6
     # setuptools pin is for https://github.com/leeping/forcebalance/issues/307
     - setuptools <82
