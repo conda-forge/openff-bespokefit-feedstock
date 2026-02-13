@@ -38,7 +38,7 @@ requirements:
     - openff-qcsubmit >=0.50
     - forcebalance =1.9.6
     # setuptools pin is for https://github.com/leeping/forcebalance/issues/307
-    - setuptools <81
+    - setuptools <82
     - openff-fragmenter-base >=0.1.2
     - openmm >=7.6.0
     - qcportal >=0.50
