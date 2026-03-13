@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -53,7 +53,8 @@ requirements:
     - celery >=5.0.0
     - httpx
     - redis-server
-    - redis-py
+    # Downpin from https://github.com/openforcefield/openff-bespokefit/pull/426/changes
+    - redis-py <7.2
   run_constrained:
     - h5py >=3.6
 
